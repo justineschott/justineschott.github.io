@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="images/alienmonster.jpg">
+    <title>Record Linkage</title>
+  </head>
+  <body>
+      <div id="header">
+        <div id="header-color"></div>
+        <div><h1>Justine Schott</h1></div>
+        <div>
+          <h2>
+            <a href="mailto:justine56@protonmail.com">justine56@protonmail.com</a> |
+            <a href="tel:+17604737871">(760) 473-7871</a> |
+            <a href="https://www.google.com/maps/place/Alameda,+CA/@37.7543665,-122.3519363,12z/data=!3m1!4b1!4m5!3m4!1s0x808f80d8f2cf1595:0x66ff99cf60016f14!8m2!3d37.7798721!4d-122.2821855" target="_blank">Alameda, CA</a> |
+            <a href="https://www.linkedin.com/in/justine-schott-9ba4aa12/" target="_blank">LinkedIn</a>
+          </h2>
+        </div>
+      </div>
+
+      <h3>Volunteering with DataKind and partner organization Muso Health</h3>
+
+      <h4>PROBLEM STATEMENT</h4>
+        <div class="inline-div">
+          <img id="portrait-img" src="images/datakind.png">
+          <div>
+            <p class="bio-text">
+              In 2017, Muso launched a large, three-year randomized controlled trial (RCT) to test the impact of a proactive community case management (ProCCM) intervention compared to passive CHWs, which is Mali’s current model.
+            </p>
+            <p class="bio-text">
+              Unique identification numbers (IDs) were assigned to each person enumerated.
+            </p>
+            <p class="bio-text">
+              However, Muso learned that in practice, study participants may have multiple IDs, due to natural migration and marriage patterns as well as considerable population migration amidst increasing insecurity in the region.
+            </p>
+            <p class="bio-text">
+              Muso identified a need to perform probabilistic record linkage across census survey years in order to create a Master Person Index (MPI).
+            </p>
+            <p class="bio-text">
+              <a href="https://www.linkedin.com/posts/datakind-sf_impact-nonprofit-volunteers-activity-6561398010943803392-2qdV/">Check out the Linkedin post here.</a>
+            </p>
+          </div>
+          <img id="portrait-img" src="images/muso.png" border=black>
+        </div>
+
+        <h4>PROCESS</h4>
+          <div class="inline-div">
+            <img id="portrait-img" src="images/record_linkage_process.png">
+          </div>
+
+          <h4>TECHNICAL INFORMATION</h4>
+            <div class="inline-div">
+              <div>
+                <p class="bio-text">
+                  <ul>
+                    <li>
+                      Used python recordlinkage package to efficiently calculate probabilities using various methodologies, customized for each feature
+                    </li>
+                    <li>
+                      Used blocking techniques to create model efficiently
+                    </li>
+                    <li>
+                      Created final probability of match using Expectation-Maximization (ECM), which weights probabilities using maximum likelihood estimators
+                    </li>
+                    <li>
+                      Determined threshold for acceptance by reviewing final probabilities
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+  </body>
+</html>
