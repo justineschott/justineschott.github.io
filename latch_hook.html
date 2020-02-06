@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="images/alienmonster.jpg">
+    <title>Record Linkage</title>
+  </head>
+  <body>
+      <div id="header">
+        <div id="header-color"></div>
+        <div><h1>Justine Schott</h1></div>
+        <div>
+          <h2>
+            <a href="mailto:justine56@protonmail.com">justine56@protonmail.com</a> |
+            <a href="tel:+17604737871">(760) 473-7871</a> |
+            <a href="https://www.google.com/maps/place/Alameda,+CA/@37.7543665,-122.3519363,12z/data=!3m1!4b1!4m5!3m4!1s0x808f80d8f2cf1595:0x66ff99cf60016f14!8m2!3d37.7798721!4d-122.2821855" target="_blank">Alameda, CA</a> |
+            <a href="https://www.linkedin.com/in/justine-schott-9ba4aa12/" target="_blank">LinkedIn</a>
+          </h2>
+        </div>
+      </div>
+
+      <h3>Custom Hook Rug Grids</h3>
+
+      <h4>TOOL SUMMARY</h4>
+        <div class="inline-div">
+          <div class="img-div">
+            <img id="orig-img" src="images/rolling_stones.jpg">
+            <img id="rug-img" src="images/rolling_stones_rug.png">
+          </div>
+          <div>
+            <p class="bio-text">
+              Latch hooking is a craft that creates a small shag rug to display or make into a throw pillow.
+            </p>
+            <p class="bio-text">
+              Latch hook kits are available to buy online, but the design can't be customized.
+            </p>
+            <p class="bio-text">
+              The Custom Hook Rug Grid tool creates a latch hook kit out of any JPG or PNG that you choose.
+            </p>
+          </div>
+          <img id="orig-img" src="images/thrice.jpg">
+          <img id="rug-img" src="images/thrice_rug.jpg">
+        </div>
+
+        <h4>TECHNICAL INFORMATION</h4>
+          <div class="inline-div-noimg">
+            <div>
+              <p class="bio-text">
+                There are 2 python scripts stored in the <a href="https://www.github.com/justineschott/pixelate/">GitHub repository pixelate</a>:
+                <ul>
+                  <li>
+                    <b>01_herrschners.py:</b> Converts the images of rug yarn available on the <a href="https://www.herrschners.com/product/herrschners%26%23174-+pre-cut+latch+hook+rug+yarn.do">Herrschner's website</a> into R/B/Gs. Doesn't have to be run more than once.
+                  </li>
+                  <li>
+                    <b>02_pixelate.py:</b> Converts image of choosing into an XLS latch hook grid, and summarizes the number of each color yarn package you need to purchase. There are 3 arguments:
+                  </li>
+                  <ul>
+                    <li>
+                      The name folder of the chosen JPG/PNG within the fig folder
+                    </li>
+                    <li>
+                      Specify if the image is JPG or PNG
+                    </li>
+                    <li>
+                      Specify how many columns of yarn you want for your custom grid
+                    </li>
+                  </ul>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+  </body>
+</html>
