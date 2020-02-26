@@ -29,6 +29,16 @@ body {
   height: 25vw;
   padding: 1vw;
 }
+#rug-img {
+  white-space: nowrap;
+  height: 15vw;
+  padding: 0vw;
+}
+#orig-img {
+  white-space: nowrap;
+  height: 15vw;
+  padding-right: .25vw;
+}
 h1 {
   font-weight: bold;
   font-family: Oswald;
@@ -71,28 +81,11 @@ h4 {
   padding: 1vw;
 }
 .img-div {
-  white-space: nowrap;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: left;
   padding: .5vw;
-  width: 15vw;
-  height: 15vw;
-  position: relative;
-  display: flex;
-}
-.img-div .img-top {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-.img-div:hover .img-top {
-  display: inline;
-  padding: .5vw;
-  width: 15vw;
-  height: 15vw;
 }
 .inline-div-noimg {
   display: flex;
