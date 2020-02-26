@@ -4,7 +4,7 @@ a:hover {color:#7f7f7f;}
 a:active {color:#7f7f7f}
 body {
   background-color: #ffffff;
-  font-family: 'Candara';
+  font-family: Candara;
 }
 #header {
   position: fixed;
@@ -21,41 +21,31 @@ body {
 }
 #results-img {
   white-space: nowrap;
-  width: 700px;
+  width: 50vw;
   padding: 1vw;
 }
 #portrait-img {
   white-space: nowrap;
-  height: 350px;
+  height: 25vw;
   padding: 1vw;
-}
-#rug-img {
-  white-space: nowrap;
-  height: 230px;
-  padding: .5vw;
-}
-#orig-img {
-  white-space: nowrap;
-  height: 100px;
-  padding: .5vw;
 }
 h1 {
   font-weight: bold;
-  font-family: 'Oswald';
+  font-family: Oswald;
   text-align: left;
-  margin: 0px;
+  margin: 0vw;
 }
 h2 {
-  font-family: 'Oswald';
+  font-family: Oswald;
   text-align: left;
   font-weight: normal;
   font-size:1.5vw;
-  border-bottom: 3px solid black;
+  border-bottom: .25vw solid black;
   margin: 0vw;
   padding-bottom: 1vw;}
 h3 {
   font-size: 180%;
-  font-family: 'Oswald';
+  font-family: Oswald;
   font-weight: normal;
   text-align: center;
   margin-top: 5vw;
@@ -64,7 +54,7 @@ h3 {
 h4 {
   font-size: 180%;
   font-weight: normal;
-  font-family: 'Oswald';
+  font-family: Oswald;
   color: #22938c;
   text-align: center;
   margin-bottom: 1vw;
@@ -81,11 +71,28 @@ h4 {
   padding: 1vw;
 }
 .img-div {
-  display: flex;
+  white-space: nowrap;
   flex-direction: row;
   justify-content: center;
   text-align: left;
   padding: .5vw;
+  width: 15vw;
+  height: 15vw;
+  position: relative;
+  display: flex;
+}
+.img-div .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.img-div:hover .img-top {
+  display: inline;
+  padding: .5vw;
+  width: 15vw;
+  height: 15vw;
 }
 .inline-div-noimg {
   display: flex;
@@ -98,6 +105,6 @@ h4 {
 }
 .bio-text {
   position:relative;
-  top:-5px;
+  top:-.5vw;
   z-index: 0;
 }
