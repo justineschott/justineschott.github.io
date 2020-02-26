@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="images/alienmonster.jpg">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <title>Record Linkage</title>
   </head>
   <body>
@@ -46,13 +47,14 @@
 
         <h4>PROCESS</h4>
           <div class="inline-div">
-            <img id="portrait-img" src="images/record_linkage_process.png">
+            <img id="portrait-img" src="images/record_linkage_process_winter.png">
           </div>
 
           <h4>TECHNICAL INFORMATION</h4>
             <div class="inline-div">
               <div>
                 <p class="bio-text">
+                  Features of the record linkage:
                   <ul>
                     <li>
                       Used python recordlinkage package to efficiently calculate probabilities using various methodologies, customized for each feature
@@ -67,9 +69,30 @@
                       Determined threshold for acceptance by reviewing final probabilities
                     </li>
                   </ul>
+                  There are 3 jupyter notebooks stored in a private GitHub repository:
+                  <ul>
+                    <li>
+                      <b>01_data_transformation.ipynb:</b> Creates data transformations to ensure that the model will run on standardized data.
+                    </li>
+                    <li>
+                      <b>02_recordlinkage.ipynb:</b> Runs record linkage model on two standardized datasets, for example year 0 and year 1.
+                    </li>
+                    <li>
+                      <b>03_final_datasets.ipynb:</b> Creates final datasets that can be imported into a database or used for the next year of record linkage.
+                    </li>
+                  </ul>
                 </p>
               </div>
             </div>
+
+            <h4>RESULTS</h4>
+              <div class="inline-div">
+                <img id="results-img" src="images/record_linkage_results_matches.png">
+              </div>
+              <div class="inline-div">
+                <img id="results-img" src="images/record_linkage_results_one_match.png">
+              </div>
+
 
   </body>
 </html>

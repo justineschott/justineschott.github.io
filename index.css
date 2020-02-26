@@ -19,6 +19,11 @@ body {
   width: 20vw;
   height: 4vw;
 }
+#results-img {
+  white-space: nowrap;
+  width: 700px;
+  padding: 1vw;
+}
 #portrait-img {
   white-space: nowrap;
   height: 350px;
@@ -67,7 +72,6 @@ h4 {
 .project-img {
   white-space: nowrap;
   width: 20vw;
-  padding: 1vw;
 }
 .inline-div {
   display: flex;
